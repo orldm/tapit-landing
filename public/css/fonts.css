@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Catamaran-Bold;
+  src:  url(public/fonts/Catamaran-Bold.woff);
+}
+@font-face {
+  font-family: Catamaran-ExtraBold;
+  src:  url(public/fonts/Catamaran-ExtraBold.woff);
+}
+@font-face {
+  font-family: Cardo-Regular;
+  src:  url(public/fonts/Cardo-Regular.woff);
+}

@@ -1,0 +1,287 @@
+/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+embed,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+html {
+  background-color: white;
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+section {
+    padding: 2rem 6rem;
+    min-width: 768px;
+}
+footer {
+    padding: 0 6rem;
+}
+
+h1 {
+    /*font-size: 4.5rem;*/
+    text-transform: uppercase;
+}
+h2 {
+    font-family: Catamaran-ExtraBold;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #141024;
+}
+p {
+    font-family: Cardo-Regular;
+    font-size: 1.4rem;
+    color: #141024;
+}
+.text-center {
+    text-align: center;
+}
+.text-colored {
+    color: #3F2B8F;
+}
+.background-colored {
+    background-color: #141024;
+}
+.background-colored h2, .background-colored p {
+    color: #FFFFFF;
+}
+.link-button {
+    padding: 0.5rem 2rem;
+    /*line-height: 6rem;*/
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #3F2B8F;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-family: Catamaran-Bold;
+    font-size: 1.2rem;
+}
+.link-button-colored {
+    background: #3F2B8F;
+    background: -webkit-linear-gradient(left, #3F2B8F , #592A92);
+    background: -o-linear-gradient(right, #3F2B8F, #592A92);
+    background: -moz-linear-gradient(right, #3F2B8F, #592A92);
+    background: linear-gradient(to right, #3F2B8F , #592A92);
+}
+
+.header-block {
+    width: 100%;
+    background-color: #141024;
+}
+
+.header-block .link-button {
+    float: right;
+}
+
+section.home-block {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    min-height: 630px;
+    color: #FFFFFF;
+    background-color: #141024;
+}
+
+section.home-block h1 {
+    font-size: 5vw;
+}
+
+section.home-block p {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    width: 50%;
+}
+
+.home-img {
+    position: absolute;
+    margin-top: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.home-img img {
+    width: 55vw;
+    max-width: 813px;
+}
+
+@media screen and (max-width: 768px) {
+    .home-block h1 {
+        font-size: 2.75rem;
+    }
+    .home-img img {
+        width: 420px;
+    }
+}
+
+.home-text {
+    position: absolute;
+    top: 6rem;
+    width: 60%;
+    z-index: 10;
+}
+section.stats-block {
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+}
+.stats-container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+.stats-card {
+    padding: 2rem;
+    width: 30%;
+    height: 230px;
+    background-color: #FFFFFF;
+}
+.stats-card p {
+    color: #141024;
+    margin-top: 2rem;
+    text-align: left;
+}
+.stats-card .stats-number-container {
+    width: 60px;
+    height: 60px;
+    overflow-x: visible;
+    border-top: 4px solid #3F2B8F;
+}
+.stats-card .stats-number-container h3 {
+    font-family: Catamaran-ExtraBold;
+    font-size: 3rem;
+}
+section.customers-block {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+section.customers-block h2, section.stats-block h2 {
+    margin-bottom: 4rem;
+}
+section.brands-container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+}
+
+section.brands-container img {
+    width: 25%;
+    height: 25%;
+}
+footer {
+    margin-top: 4rem;
+}
+.footer-container {
+    position: relative;
+    padding: 2rem 0;
+    border-top: 1px solid #EEEEEE;
+}
+
+.footer-container img {
+    position: absolute;
+    bottom: 1.4rem;
+    transform: translateX(-50%);
+    left: 50%;
+}

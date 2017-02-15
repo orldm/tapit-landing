@@ -5,6 +5,11 @@
     <title>TapIt</title>
     <link type="text/css" href="./css/fonts.css" rel="stylesheet">
     <link type="text/css" href="./css/main.css" rel="stylesheet">
+    <script src="./js/vendor/jquery-2.2.4.min.js" defer></script>
+    <script src="./js/vendor/jquery.mousewheel.min.js" defer></script>
+    <script src="./js/vendor/jquery.simplr.smoothscroll.min.js" defer></script>
+    <script src="./js/vendor/jquery.waypoints.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <section class="header-block background-colored">
@@ -22,8 +27,48 @@
         </div>
     </section>
     <section class="slide-block text-center">
-        <h2>A single platform for UGC.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem enim eius sit doloribus quis voluptas molestiae quae sapiente</p>
+        <div class="slides-container JS-top" id="JS-slidesContainer">
+            <h2>A single platform for UGC.</h2>
+            <div class="navigation-dots">
+                <a href="#slide-0" class="dot active"></a>
+                <a href="#slide-1" class="dot"></a>
+                <a href="#slide-2" class="dot"></a>
+                <a href="#slide-3" class="dot"></a>
+            </div>
+            <img src="./img/slide-0.png" alt="Slide">
+        </div>
+        <div class="slide-scrollable" id="slide-0">
+            <div class="slide-content">
+                <div class="slide-number-container"><span>1</span></div>
+                <h3>Discover</h3>
+                <div class="slide-text-divider"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+            </div>
+        </div>
+        <div class="slide-scrollable" id="slide-1">
+            <div class="slide-content">
+                <div class="slide-number-container"><span>2</span></div>
+                <h3>Curate</h3>
+                <div class="slide-text-divider"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+            </div>
+        </div>
+        <div class="slide-scrollable" id="slide-2">
+            <div class="slide-content">
+                <div class="slide-number-container"><span>3</span></div>
+                <h3>License</h3>
+                <div class="slide-text-divider"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+            </div>
+        </div>
+        <div class="slide-scrollable" id="slide-3">
+            <div class="slide-content">
+                <div class="slide-number-container"><span>4</span></div>
+                <h3>Distribute</h3>
+                <div class="slide-text-divider"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+            </div>
+        </div>
     </section>
     <section class="stats-block background-colored text-center">
         <h2>Get better results using <br><span class="text-colored">UGC with TapIt.</span></h2>

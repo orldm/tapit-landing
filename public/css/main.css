@@ -257,6 +257,7 @@ section.slide-block {
     width: 100%;
     height: 100vh;
     max-height: 100vh;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -307,6 +308,12 @@ section.slide-block {
     margin-left: 10%;
 }
 
+@-moz-document url-prefix() {
+    .navigation-dots {
+        position: absolute;
+    }
+}
+
 .dot {
     width: 10px;
     height: 10px;
@@ -328,6 +335,7 @@ section.slide-block {
 }
 
 .slide-scrollable {
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     height: 100vh;

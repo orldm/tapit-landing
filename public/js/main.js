@@ -5,16 +5,8 @@ $(function() {
         img = slidesContainer.find('img'),
         timeOut;
 
-    $.srSmoothscroll({
-        step: 55,
-        speed: 100,
-        ease: 'swing',
-        target: $('body'),
-        container: $(window)
-    });
-
     // preload images
-    for (var i = 0; i < 4; ++i) {
+    for (var i = 0; i < dots.length; i++) {
         $('<img />').attr('src','./img/slide-' + i + '.png').appendTo('body').hide();
     }
 
@@ -30,9 +22,9 @@ $(function() {
         }, 400);
     });
 
-    var waypoints = $('.slide-number-container').waypoint(function(direction) {
-        var delta = direction === 'down' ? 1 : 0,
-            index = parseInt((this.key.slice(9)), 10) + delta;
+    $('.slide-number-container').waypoint(function(direction) {
+        var indexOffset = direction === 'down' ? 1 : 0,
+            index = parseInt((this.key.slice(9)), 10) + indexOffset;
         clearTimeout(timeOut);
         if (index ===  dots.length) {
             return;
@@ -49,14 +41,15 @@ $(function() {
         }
     });
 
-    var startWp = $('#slide-0').waypoint(function(direction) {
+    $('#slide-0').waypoint(function(direction) {
         if (direction === 'down') {
             slidesContainer.addClass('JS-middle').removeClass('JS-top JS-bottom');
         } else if (direction === 'up') {
             slidesContainer.addClass('JS-top').removeClass('JS-middle JS-bottom');
         }
     });
-    var endWp = $('#slide-3').waypoint(function(direction) {
+    
+    $('#slide-3').waypoint(function(direction) {
         if (direction === 'down') {
             slidesContainer.addClass('JS-bottom').removeClass('JS-top JS-middle');
         } else if (direction === 'up') {

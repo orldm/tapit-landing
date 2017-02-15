@@ -5,6 +5,14 @@ $(function() {
         img = slidesContainer.find('img'),
         timeOut;
 
+    $.srSmoothscroll({
+        step: 55,
+        speed: 100,
+        ease: 'swing',
+        target: $('body'),
+        container: $(window)
+    });
+
     // preload images
     for (var i = 0; i < dots.length; i++) {
         $('<img />').attr('src','./img/slide-' + i + '.png').appendTo('body').hide();
@@ -48,7 +56,7 @@ $(function() {
             slidesContainer.addClass('JS-top').removeClass('JS-middle JS-bottom');
         }
     });
-    
+
     $('#slide-3').waypoint(function(direction) {
         if (direction === 'down') {
             slidesContainer.addClass('JS-bottom').removeClass('JS-top JS-middle');

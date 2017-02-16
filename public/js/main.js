@@ -1,7 +1,7 @@
 $(function() {
 
     var slidesContainer = $('#JS-slidesContainer'),
-        dots = slidesContainer.find('.dot'),
+        dots = slidesContainer.find('.JS-slideNav'),
         img = slidesContainer.find('img'),
         timeOut;
 
@@ -18,7 +18,14 @@ $(function() {
         $('<img />').attr('src','./img/slide-' + i + '.png').appendTo('body').hide();
     }
 
-    $('.dot').click(function(e){
+    $('#JS-scrollDown').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 400);
+    });
+
+    $('.JS-slideNav').click(function(e){
         e.preventDefault();
         var active = slidesContainer.find('.dot.active'),
             scrollToActivateWaypoint = -1;
@@ -30,7 +37,7 @@ $(function() {
         }, 400);
     });
 
-    $('.slide-number-container').waypoint(function(direction) {
+    $('.JS-slideWaypoint').waypoint(function(direction) {
         var indexOffset = direction === 'down' ? 1 : 0,
             index = parseInt((this.key.slice(9)), 10) + indexOffset;
         clearTimeout(timeOut);

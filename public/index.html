@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TapIt</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     <link type="text/css" href="./css/fonts.css" rel="stylesheet">
     <link type="text/css" href="./css/main.css" rel="stylesheet">
     <script src="./js/vendor/jquery-2.2.4.min.js" defer></script>
@@ -12,110 +13,124 @@
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <section class="header-block background-colored">
-        <img src="./img/tapit-logo-white.png" alt="TapIt">
-        <a class="link-button" href="#">Request Demo</a>
+    <section class="background-colored">
+        <div class="section-container header-block">
+            <img src="./img/tapit-logo-white.png" alt="TapIt">
+            <a class="link-button" href="#">Request Demo</a>
+        </div>
     </section>
-    <section class="home-block background-colored">
-        <div class="home-text">
-            <h1>Let your<br>customers <br><span class="text-colored">Tell your story</span></h1>
-            <p class="text-paragraph">Find, License and Display authentic content created by your loyal customers</p>
-            <a class="link-button link-button-colored" href="#">Request Demo</a>
-        </div>
-        <div class="home-img">
-            <img src="./img/header-photos.png" alt="Let Your Customers Tell Your Story">
-        </div>
-        <a class="scroll-down-button" id="JS-scrollDown" href="#slide-0">
-            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-            <svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g transform="translate(-18, -16)" fill="#FFFFFF">
-                        <path d="M27.9713193,37.5279447 C27.7691708,37.8136387 27.436332,38 27.0568111,38 C27.0273849,38 26.9982237,37.9988666 26.969369,37.9966408 C26.6816979,37.9993805 26.3927626,37.890972 26.1756497,37.673859 L18.4013226,29.899532 C17.9706834,29.4688928 17.9731105,28.7682617 18.3949943,28.3463778 L18.432115,28.3092571 C18.8592592,27.8821129 19.5600268,27.890343 19.9852692,28.3155854 L25.9367917,34.2671079 L25.9367917,17.1212289 C25.9367917,16.5019913 26.4339289,16 27.0568111,16 C27.6753807,16 28.1768305,16.5008361 28.1768305,17.1212289 L28.1768305,34.1545403 L34.0157854,28.3155854 C34.4464246,27.8849462 35.1470557,27.8873732 35.5689396,28.3092571 L35.6060603,28.3463778 C36.0332045,28.773522 36.0249744,29.4742896 35.599732,29.899532 L27.9713193,37.5279447 Z"
-                            id="Combined-Shape"></path>
+    <section class="background-colored border-bottom">
+        <div class="section-container home-block">
+            <div class="home-text">
+                <h1>Let your<br>customers <br><span class="text-colored">Tell your story</span></h1>
+                <p class="text-paragraph">Find, License and Display authentic content created by your loyal customers</p>
+                <a class="link-button link-button-colored" href="#">Request Demo</a>
+            </div>
+            <div class="home-img">
+                <img src="./img/header-photos.png" alt="Let Your Customers Tell Your Story">
+            </div>
+            <a class="scroll-down-button" id="JS-scrollDown" href="#slide-0">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-18, -16)" fill="#FFFFFF">
+                            <path d="M27.9713193,37.5279447 C27.7691708,37.8136387 27.436332,38 27.0568111,38 C27.0273849,38 26.9982237,37.9988666 26.969369,37.9966408 C26.6816979,37.9993805 26.3927626,37.890972 26.1756497,37.673859 L18.4013226,29.899532 C17.9706834,29.4688928 17.9731105,28.7682617 18.3949943,28.3463778 L18.432115,28.3092571 C18.8592592,27.8821129 19.5600268,27.890343 19.9852692,28.3155854 L25.9367917,34.2671079 L25.9367917,17.1212289 C25.9367917,16.5019913 26.4339289,16 27.0568111,16 C27.6753807,16 28.1768305,16.5008361 28.1768305,17.1212289 L28.1768305,34.1545403 L34.0157854,28.3155854 C34.4464246,27.8849462 35.1470557,27.8873732 35.5689396,28.3092571 L35.6060603,28.3463778 C36.0332045,28.773522 36.0249744,29.4742896 35.599732,29.899532 L27.9713193,37.5279447 Z"
+                                id="Combined-Shape"></path>
+                        </g>
                     </g>
-                </g>
-            </svg>
-        </a>
-    </section>
-    <section class="slide-block text-center">
-        <div class="slides-container JS-top" id="JS-slidesContainer">
-            <h2>A single platform for UGC.</h2>
-            <div class="navigation-dots">
-                <a href="#slide-0" class="dot active JS-slideNav"></a>
-                <a href="#slide-1" class="dot JS-slideNav"></a>
-                <a href="#slide-2" class="dot JS-slideNav"></a>
-                <a href="#slide-3" class="dot JS-slideNav"></a>
-            </div>
-            <img src="./img/slide-0.png" alt="Slide">
-        </div>
-        <div class="slide-scrollable" id="slide-0">
-            <div class="slide-content">
-                <div class="slide-number-container JS-slideWaypoint"><span>1</span></div>
-                <h3>Discover</h3>
-                <div class="slide-text-divider"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
-            </div>
-        </div>
-        <div class="slide-scrollable" id="slide-1">
-            <div class="slide-content">
-                <div class="slide-number-container JS-slideWaypoint"><span>2</span></div>
-                <h3>Curate</h3>
-                <div class="slide-text-divider"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
-            </div>
-        </div>
-        <div class="slide-scrollable" id="slide-2">
-            <div class="slide-content">
-                <div class="slide-number-container JS-slideWaypoint"><span>3</span></div>
-                <h3>License</h3>
-                <div class="slide-text-divider"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
-            </div>
-        </div>
-        <div class="slide-scrollable" id="slide-3">
-            <div class="slide-content">
-                <div class="slide-number-container JS-slideWaypoint"><span>4</span></div>
-                <h3>Distribute</h3>
-                <div class="slide-text-divider"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
-            </div>
+                </svg>
+            </a>
         </div>
     </section>
-    <section class="stats-block background-colored text-center">
-        <h2>Get better results using <br><span class="text-colored">UGC with TapIt.</span></h2>
-        <div class="stats-container">
-            <div class="stats-card">
-                <div class="stats-number-container">
-                    <h3>160%</h3>
+    <section class="text-center border-bottom">
+        <div class="section-container slide-block">
+            <div class="slides-container JS-top" id="JS-slidesContainer">
+                <h2>A single platform for UGC.</h2>
+                <div class="navigation-dots">
+                    <a href="#slide-0" class="dot active JS-slideNav"></a>
+                    <a href="#slide-1" class="dot JS-slideNav"></a>
+                    <a href="#slide-2" class="dot JS-slideNav"></a>
+                    <a href="#slide-3" class="dot JS-slideNav"></a>
                 </div>
-                <p>Increase in content sharing</p>
+                <img src="./img/slide-0.png" alt="Slide">
             </div>
-            <div class="stats-card">
-                <div class="stats-number-container">
-                    <h3>2X</h3>
+            <div class="slide-scrollable" id="slide-0">
+                <div class="slide-content">
+                    <div class="slide-number-container JS-slideWaypoint"><span>1</span></div>
+                    <h3>Discover</h3>
+                    <div class="slide-text-divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
                 </div>
-                <p>Conversions</p>
             </div>
-            <div class="stats-card">
-                <div class="stats-number-container">
-                    <h3>65%</h3>
+            <div class="slide-scrollable" id="slide-1">
+                <div class="slide-content">
+                    <div class="slide-number-container JS-slideWaypoint"><span>2</span></div>
+                    <h3>Curate</h3>
+                    <div class="slide-text-divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
                 </div>
-                <p>People seek out UGC before a purchase</p>
+            </div>
+            <div class="slide-scrollable" id="slide-2">
+                <div class="slide-content">
+                    <div class="slide-number-container JS-slideWaypoint"><span>3</span></div>
+                    <h3>License</h3>
+                    <div class="slide-text-divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+                </div>
+            </div>
+            <div class="slide-scrollable" id="slide-3">
+                <div class="slide-content">
+                    <div class="slide-number-container JS-slideWaypoint"><span>4</span></div>
+                    <h3>Distribute</h3>
+                    <div class="slide-text-divider"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+                </div>
             </div>
         </div>
     </section>
-    <section class="customers-block text-center">
-        <h2>Customer centric brands <br><span class="text-colored">are using TapIt.</span></h2>
+    <section class="background-colored text-center">
+        <div class="section-container stats-block">
+            <div class="stats-content-centered">
+                <h2>Get better results using <br><span class="text-colored">UGC with TapIt.</span></h2>
+                <div class="stats-container">
+                    <div class="stats-card">
+                        <div class="stats-number-container">
+                            <h3>160%</h3>
+                        </div>
+                        <p>Increase in content sharing</p>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-number-container">
+                            <h3>2X</h3>
+                        </div>
+                        <p>Conversions</p>
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-number-container">
+                            <h3>65%</h3>
+                        </div>
+                        <p>People seek out UGC before a purchase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center">
+        <div class="section-container customers-block">
+            <h2>Customer centric brands <br><span class="text-colored">are using TapIt.</span></h2>
+        </div>
     </section>
     <section class="brands-container">
-        <img src="./img/brand-0.png" alt="Vero Moda">
-        <img src="./img/brand-1.png" alt="Zulily">
-        <img src="./img/brand-2.png" alt="Aol.">
-        <img src="./img/brand-3.png" alt="Hearst">
+            <img src="./img/brand-0.png" alt="Vero Moda">
+            <img src="./img/brand-1.png" alt="Zulily">
+            <img src="./img/brand-2.png" alt="Aol.">
+            <img src="./img/brand-3.png" alt="Hearst">
     </section>
-    <section class="customers-block text-center">
-        <h2>Let your customers <br><span class="text-colored">tell your brand story.</span></h2>
-        <a class="link-button link-button-colored" href="#">Request Demo</a>
+    <section class="text-center">
+        <div class="section-container customers-block">
+            <h2>Let your customers <br><span class="text-colored">tell your brand story.</span></h2>
+            <a class="link-button link-button-colored" href="#">Request Demo</a>
+        </div>
     </section>
     <footer>
         <div class="footer-container">

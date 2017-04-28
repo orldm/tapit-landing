@@ -6,11 +6,6 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link type="text/css" href="./css/fonts.css" rel="stylesheet">
     <link type="text/css" href="./css/main.css" rel="stylesheet">
-    <script src="./js/vendor/jquery-2.2.4.min.js" defer></script>
-    <script src="./js/vendor/jquery.mousewheel.min.js" defer></script>
-    <script src="./js/vendor/jquery.simplr.smoothscroll.min.js" defer></script>
-    <script src="./js/vendor/jquery.waypoints.min.js" defer></script>
-    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <section class="background-colored">
@@ -19,7 +14,7 @@
             <a class="link-button" href="#">Request Demo</a>
         </div>
     </section>
-    <section class="background-colored border-bottom">
+    <section class="background-colored">
         <div class="section-container home-block">
             <div class="home-text">
                 <h1>Let your<br>customers <br><span class="text-colored">Tell your story</span></h1>
@@ -29,7 +24,7 @@
             <div class="home-img">
                 <img src="./img/header-photos.png" alt="Let Your Customers Tell Your Story">
             </div>
-            <a class="scroll-down-button" id="JS-scrollDown" href="#slide-0">
+            <a class="scroll-down-button" id="JS-scrollDown" href="#features-block">
                 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                 <svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -42,48 +37,52 @@
             </a>
         </div>
     </section>
-    <section class="text-center border-bottom">
-        <div class="section-container slide-block">
-            <div class="slides-container JS-top" id="JS-slidesContainer">
-                <h2>A single platform for UGC.</h2>
-                <div class="navigation-dots">
-                    <a href="#slide-0" class="dot active JS-slideNav"></a>
-                    <a href="#slide-1" class="dot JS-slideNav"></a>
-                    <a href="#slide-2" class="dot JS-slideNav"></a>
-                    <a href="#slide-3" class="dot JS-slideNav"></a>
-                </div>
-                <img src="./img/slide-0.png" alt="Slide">
-            </div>
-            <div class="slide-scrollable" id="slide-0">
-                <div class="slide-content">
-                    <div class="slide-number-container JS-slideWaypoint"><span>1</span></div>
+    <section class="text-center">
+        <div class="section-container features-block" id="features-block">
+            <h2>A single platform for UGC.</h2>
+            <div class="slide-content">
+                <div class="text-container">
+                    <div class="slide-number-container"><span>1</span></div>
                     <h3>Discover</h3>
                     <div class="slide-text-divider"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
                 </div>
+                <div class="img-container">
+                    <img src="./img/slide-0.png" alt="Slide">
+                </div>
             </div>
-            <div class="slide-scrollable" id="slide-1">
-                <div class="slide-content">
-                    <div class="slide-number-container JS-slideWaypoint"><span>2</span></div>
+
+            <div class="slide-content">
+                <div class="text-container">
+                    <div class="slide-number-container"><span>2</span></div>
                     <h3>Curate</h3>
                     <div class="slide-text-divider"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
                 </div>
+                <div class="img-container">
+                    <img src="./img/slide-1.png" alt="Slide">
+                </div>
             </div>
-            <div class="slide-scrollable" id="slide-2">
-                <div class="slide-content">
-                    <div class="slide-number-container JS-slideWaypoint"><span>3</span></div>
-                    <h3>License</h3>
+            <div class="slide-content">
+                <div class="text-container">
+                    <div class="slide-number-container"><span>3</span></div>
+                    <h3>License </h3>
                     <div class="slide-text-divider"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
                 </div>
+                <div class="img-container">
+                    <img src="./img/slide-2.png" alt="Slide">
+                </div>
             </div>
-            <div class="slide-scrollable" id="slide-3">
-                <div class="slide-content">
-                    <div class="slide-number-container JS-slideWaypoint"><span>4</span></div>
+            <div class="slide-content">
+                <div class="text-container">
+                    <div class="slide-number-container"><span>4</span></div>
                     <h3>Distribute</h3>
                     <div class="slide-text-divider"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, dolorem in fugit, sequi nemo ut vel accusantium.</p>
+                </div>
+                <div class="img-container">
+                    <img src="./img/slide-3.png" style="margin-left:80px;" alt="Slide">
                 </div>
             </div>
         </div>
@@ -139,4 +138,15 @@
         </div>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('#JS-scrollDown').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 400);
+        });
+    });
+</script>
 </html>

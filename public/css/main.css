@@ -131,7 +131,7 @@ h1 {
 h2 {
     font-family: Catamaran-ExtraBold;
     font-size: 48px;
-    line-height: 3.8rem;
+    line-height: 58px;
     color: #141024;
 }
 p {
@@ -196,10 +196,6 @@ p {
     min-height: 640px;
     color: #FFFFFF;
     background-color: #141024;
-}
-
-.border-bottom {
-    border-bottom: 2px solid #FFFFFF;
 }
 
 .section-container.home-block h1 {
@@ -270,7 +266,7 @@ p {
     border-radius: 50px;
     border: 1px solid #3F2B8F;
     background-color: transparent;
-    bottom: 30px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
@@ -283,52 +279,20 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.section-container.slide-block {
-    padding-top: 0;
-    padding-bottom: 0;
-    position: relative;
+.section-container.features-block {
+    padding-top: 160px;
+    padding-bottom: 100px;
 }
 
-.JS-top {
-    position: absolute;
-    top: 0;
-    bottom: auto;
-}
-
-.JS-middle {
-    position: fixed;
-    top: 0;
-    bottom: auto;
-}
-
-.JS-bottom {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-}
-
-.slides-container {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-    max-width: 1296px;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+.section-container.features-block h2 {
+    margin-bottom: 20px;
 }
 
 .slide-number-container {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    border-radius: 54px;
     background: #3F2B8F;
     background: -webkit-linear-gradient(left, #3F2B8F , #592A92);
     background: -o-linear-gradient(right, #3F2B8F, #592A92);
@@ -339,103 +303,61 @@ p {
 .slide-number-container span {
     color: #FFFFFF;
     font-family: Cardo-Bold;
-    font-size: 2.6rem;
-}
-
-.slides-container h2 {
+    font-size: 42px;
     position: absolute;
-    padding-top: 10rem;
-    padding-bottom: 1rem;
-    top: 0;
-    width: 100%;
-    background: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.slides-container img {
-    width: 50vw;
-    max-width: 560px;
-}
-
-@media screen and (max-width: 768px) {
-    .slides-container {
-        width: 750px;
-        left: 0;
-        transform: none;
-    }
-    .slides-container img {
-        width: 385px;
-    }
-}
-
-.navigation-dots {
-    margin-left: 10%;
-}
-
-/*@media screen and (min-width:0\0) {
-    .navigation-dots {
-        position: absolute;
-    }
-}*/
-
-/*@-moz-document url-prefix() {
-    .navigation-dots {
-        position: absolute;
-    }
-}*/
-
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    display: block;
-    margin: 0 0 10px 0;
-    border: 1px solid #3F2B8F;
-}
-
-.dot.active {
-    background-color: #3F2B8F;
-}
-
-.scroll-toggle {
-    width: 100%;
-    height: 0;
-    display: none;
-}
-
-.slide-scrollable {
-    display: -webkit-flex;
+.slide-content {
     display: flex;
     align-items: center;
-    height: 100vh;
-    width: 35%;
-    margin-left: 18%;
+    justify-content: space-between;
+    margin-left: 10vw;
+    height: 65vh;
+    min-height: 500px;
 }
 
-.slide-scrollable .slide-content h3 {
+.slide-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-content h3 {
     text-align: left;
-    font-size: 2rem;
-    margin: 1rem 0;
+    font-size: 32px;
+    margin: 30px 0 10px;
     text-transform: uppercase;
     font-family: Catamaran-Black;
 }
 
-.slide-scrollable .slide-content p {
+.slide-content p {
     text-align: left;
     font-size: 19px;
+    padding-top: 10px;
 }
 
-.slide-scrollable .slide-content .slide-text-divider {
-    width: 50px;
+.slide-content .text-container {
+    width: 350px;
+}
+
+.slide-content .img-container {
+    margin-right: -5vw;
+}
+
+.slide-content .slide-text-divider {
+    width: 60px;
     height: 4px;
     background-color: #3F2B8F;
-    margin-left: -60px;
+    margin-left: -70px;
 }
 
 .section-container.stats-block {
     padding-top: 8rem;
     padding-bottom: 9rem;
     height: 110vh;
+    min-height: 620px;
 }
 
 .stats-content-centered {
@@ -451,9 +373,9 @@ p {
 }
 
 .stats-card {
-    padding: 2rem;
+    padding: 34px 28px;
     width: 30%;
-    height: 230px;
+    min-height: 230px;
     background-color: #FFFFFF;
 }
 
@@ -461,6 +383,7 @@ p {
     color: #141024;
     margin-top: 2rem;
     text-align: left;
+    font-size: 22px;
 }
 
 .stats-card .stats-number-container {
@@ -472,7 +395,7 @@ p {
 
 .stats-card .stats-number-container h3 {
     font-family: Catamaran-ExtraBold;
-    font-size: 3rem;
+    font-size: 48px;
 }
 
 .section-container.customers-block {
